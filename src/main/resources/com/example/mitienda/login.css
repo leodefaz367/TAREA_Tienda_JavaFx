@@ -1,0 +1,61 @@
+.root{
+    -fx-font-family: "Segoe UI";
+}
+
+.login-pane{
+    -fx-background-color: linear-gradient(
+            to bottom,
+            #fffdf7,
+            #fff8e7,
+            #fff2cc
+    );
+}
+
+.titulo-principal{
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f59e0b;
+}
+
+.subtitulo{
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #92400e;
+}
+
+.label{
+    -fx-text-fill: #78350f;
+}
+
+.campo-texto{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #fcd34d;
+    -fx-border-width: 1.5;
+}
+
+
+.combo-personalizado{
+    -fx-background-color: white;
+    -fx-border-color: #fcd34d;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.btn-ingresar{
+    -fx-background-color: #fb923c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-cursor: hand;
+}
+
+.btn-ingresar:hover{
+    -fx-background-color: #f97316;
+}
+
+.mensaje{
+    -fx-font-weight: bold;
+    -fx-text-fill: #dc2626;
+}

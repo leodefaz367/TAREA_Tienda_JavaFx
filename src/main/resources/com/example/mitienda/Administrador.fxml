@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane stylesheets="@style.css"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.mitienda.AdministradorController">
+
+    <left>
+        <VBox prefWidth="220" spacing="10" styleClass="menu-lateral">
+
+            <Label text="MiTienda" styleClass="titulo-aplicacion"/>
+
+            <ImageView fitHeight="75" fitWidth="75" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../../images/imagen.png"/>
+                </image>
+            </ImageView>
+
+            <Label text="Administrador" styleClass="usuario-actual"/>
+
+            <Button text="Inicio" styleClass="boton-menu"/>
+            <Button text="Productos" styleClass="boton-menu-seleccionado"/>
+            <Button text="Categorías" styleClass="boton-menu"/>
+            <Button text="Clientes" styleClass="boton-menu"/>
+            <Button text="Ventas" styleClass="boton-menu"/>
+
+            <Region VBox.vgrow="ALWAYS"/>
+
+            <Button text="Cerrar Sesión"
+                    onAction="#cerrarSesion"
+                    styleClass="boton-cerrar-sesion"/>
+
+        </VBox>
+    </left>
+
+    <top>
+        <HBox alignment="CENTER_LEFT"
+              spacing="10"
+              styleClass="barra-superior">
+
+            <Label text="Gestión de Productos"
+                   styleClass="titulo-ventana"/>
+
+        </HBox>
+    </top>
+
+    <center>
+
+        <VBox spacing="15" styleClass="area-contenido">
+
+            <TitledPane text="Registro / Edición de Producto" expanded="true">
+
+                <GridPane hgap="15" vgap="15">
+
+                    <columnConstraints>
+                        <ColumnConstraints/>
+                        <ColumnConstraints/>
+                        <ColumnConstraints/>
+                        <ColumnConstraints/>
+                        <ColumnConstraints/>
+                        <ColumnConstraints/>
+                    </columnConstraints>
+
+                    <rowConstraints>
+                        <RowConstraints/>
+                        <RowConstraints/>
+                    </rowConstraints>
+
+                    <Label text="Código"/>
+                    <TextField fx:id="txtCodigo" GridPane.columnIndex="1"/>
+
+                    <Label text="Nombre" GridPane.columnIndex="2"/>
+                    <TextField fx:id="txtNombre" GridPane.columnIndex="3"/>
+
+                    <Label text="Categoría" GridPane.columnIndex="4"/>
+                    <ComboBox fx:id="cmbCategoria" GridPane.columnIndex="5"/>
+
+                    <Label text="Precio" GridPane.rowIndex="1"/>
+                    <TextField fx:id="txtPrecio"
+                               GridPane.columnIndex="1"
+                               GridPane.rowIndex="1"/>
+
+                    <Label text="Stock"
+                           GridPane.columnIndex="2"
+                           GridPane.rowIndex="1"/>
+
+                    <TextField fx:id="txtStock"
+                               GridPane.columnIndex="3"
+                               GridPane.rowIndex="1"/>
+
+                    <Label text="Estado"
+                           GridPane.columnIndex="4"
+                           GridPane.rowIndex="1"/>
+
+                    <ComboBox fx:id="cmbEstado"
+                              GridPane.columnIndex="5"
+                              GridPane.rowIndex="1"/>
+
+                </GridPane>
+
+            </TitledPane>
+
+            <HBox spacing="10">
+
+                <Button text="Nuevo"
+                        onAction="#nuevo"
+                        styleClass="boton-nuevo"/>
+
+                <Button text="Guardar"
+                        onAction="#guardar"
+                        styleClass="boton-guardar"/>
+
+                <Button text="Actualizar"
+                        onAction="#actualizar"
+                        styleClass="boton-actualizar"/>
+
+                <Button text="Eliminar"
+                        onAction="#eliminar"
+                        styleClass="boton-eliminar"/>
+
+                <Button text="Limpiar"
+                        onAction="#limpiar"
+                        styleClass="boton-limpiar"/>
+
+            </HBox>
+
+            <Label fx:id="lblMensaje"/>
+
+            <TableView fx:id="tblProductos" prefHeight="350">
+
+                <columns>
+
+                    <TableColumn fx:id="colCodigo"
+                                 text="Código"
+                                 prefWidth="100"/>
+
+                    <TableColumn fx:id="colNombre"
+                                 text="Nombre"
+                                 prefWidth="180"/>
+
+                    <TableColumn fx:id="colCategoria"
+                                 text="Categoría"
+                                 prefWidth="120"/>
+
+                    <TableColumn fx:id="colPrecio"
+                                 text="Precio"
+                                 prefWidth="100"/>
+
+                    <TableColumn fx:id="colStock"
+                                 text="Stock"
+                                 prefWidth="100"/>
+
+                    <TableColumn fx:id="colEstado"
+                                 text="Estado"
+                                 prefWidth="120"/>
+
+                </columns>
+
+            </TableView>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>

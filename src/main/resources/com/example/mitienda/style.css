@@ -1,0 +1,89 @@
+.root{
+    -fx-background-color: #fffdf7;
+}
+
+.menu-lateral{
+    -fx-background-color: linear-gradient(
+            to bottom,
+            #fff7ed,
+            #ffedd5
+    );
+}
+
+.titulo-aplicacion{
+    -fx-text-fill: #78350f;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.usuario-actual{
+    -fx-text-fill: #78350f;
+    -fx-padding: 10 0 20 0;
+}
+
+.boton-menu{
+    -fx-background-color: transparent;
+    -fx-text-fill: #78350f;
+    -fx-alignment: CENTER_LEFT;
+    -fx-pref-width: 180;
+}
+
+.boton-menu:hover{
+    -fx-background-color: #2563eb;
+}
+
+.boton-menu-seleccionado{
+    -fx-background-color: #fb923c;
+    -fx-text-fill: #78350f;
+}
+
+.barra-superior{
+    -fx-background-color: white;
+    -fx-border-color: #fed7aa;
+}
+
+.titulo-ventana{
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.area-contenido{
+    -fx-padding: 20;
+}
+
+.boton-nuevo{
+    -fx-background-color: #C8F2B9;
+    -fx-text-fill: #78350f;
+}
+
+.boton-guardar{
+    -fx-background-color: #f59e0b;
+    -fx-text-fill: #78350f;
+}
+
+.boton-actualizar{
+    -fx-background-color: #fdba74;
+}
+
+.boton-eliminar{
+    -fx-background-color: #fb923c;
+}
+
+.boton-limpiar{
+    -fx-background-color: #6b7280;
+    -fx-text-fill: #78350f;
+}
+
+.boton-cerrar-sesion{
+    -fx-background-color: transparent;
+    -fx-text-fill: #78350f;
+}
+
+.table-view{
+    -fx-background-color: white;
+    -fx-border-color: #dcdcdc;
+}
+
+.table-view .column-header{
+    -fx-background-color: #eef2ff;
+}

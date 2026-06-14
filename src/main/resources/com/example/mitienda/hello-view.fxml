@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="273.0" styleClass="login-pane" stylesheets="@login.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mitienda.HelloController">
+   <children>
+      <Label layoutX="82.0" layoutY="30.0" text="MiTienda" styleClass="titulo-principal">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label disable="true" layoutX="82.0" layoutY="57.0" text="Sistema de Ventas" />
+      <Label layoutX="32.0" layoutY="93.0" text="Iniciar Sesión" styleClass="subtitulo">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="129.0" text="Usuario" />
+      <Label layoutX="32.0" layoutY="190.0" text="Contraseña" />
+      <Label layoutX="36.0" layoutY="276.0" text="Rol" />
+      <TextField fx:id="txtNombre" styleClass="campo-texto" layoutX="32.0" layoutY="158.0" prefHeight="25.0" prefWidth="207.0" />
+      <PasswordField fx:id="pwdContra" styleClass="campo-texto" layoutX="34.0" layoutY="227.0" prefHeight="25.0" prefWidth="207.0" />
+      <ComboBox fx:id="cmbRol" styleClass="combo-personalizado" layoutX="33.0" layoutY="308.0" prefHeight="25.0" prefWidth="207.0" />
+      <Button fx:id="btnIngresar" styleClass="btn-ingresar" layoutX="32.0" layoutY="401.0" mnemonicParsing="false" onAction="#Ingreso" prefHeight="34.0" prefWidth="207.0" text="🚪 Ingresar" />
+      <ImageView fitHeight="42.0" fitWidth="50.0" layoutX="24.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/imagen.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMensaje" layoutX="38.0" layoutY="359.0" prefHeight="17.0" prefWidth="207.0" styleClass="mensaje"/>
+   </children>
+</Pane>

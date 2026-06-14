@@ -1,0 +1,35 @@
+# Archivos compilados
+target/
+out/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/private/
+build/
+dist/
+
+# VS Code
+.vscode/
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos compilados Java
+*.class
+
+# Maven Wrapper (opcional)
+!.mvn/wrapper/maven-wrapper.jar
