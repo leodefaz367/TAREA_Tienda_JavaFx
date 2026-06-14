@@ -15,6 +15,7 @@ Inicio de sesión con validaciones y selección de rol mediante ComboBox donde s
 se maneja un crud de registro, actualización, eliminación y limpieza de campos, todo esto visto desde una tabla, en la barra izquierda no estan activadas el resto de opciones
 se manipulo la interfaz grafica mediante los fxml dando estilo con Css style y login.
 ## Estructura del Proyecto
+```text
 MiTienda
 │
 ├── src
@@ -38,6 +39,8 @@ MiTienda
 │
 ├── pom.xml
 └── README.md
+```
+
 ## Ejecución
 
 1. Descargar el zip del proyecto
